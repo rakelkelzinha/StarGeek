@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+header{
+    display: flex;
+    background-color:#0E1031;  
+    color: white;
+    width:100vw ;
+    align-items: center;
+    height: 102px;
+    gap:39%;
+}
+
+main{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 70px;
+}
+
+.btncadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.btncadastro a{
+    text-decoration: none;
+    background-color: #52C91B;
+    border-radius: 15px;
+    padding: 30px 100px;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;;
+}
+
+.cardbtn{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+   
+}
+
+.cardbtn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    
+}
+
+.menu > a{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:900px){
+ .card img{
+    width: 100px;
+    height: 100px;
+ }
+ .cardbtn a{
+    font-size: 1rem;}
+  .btncadastro a{
+        padding: 10px 30px;
+    }
+
+    header{
+        gap:28%
+    }
+}
+
+@media screen and (max-width:400px){
+    .card img{
+       width: 70px;
+       height: 70px;
+    }
+    .cardbtn a{
+       font-size: 0.7rem;
+    }
+    .btncadastro a {
+        padding: 5px 15px;
+    }
+    header{
+        gap:15%
+    }
+   }

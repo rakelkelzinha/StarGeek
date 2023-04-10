@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "i p";
+}
+
+main{
+   grid-area: p;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.foto {
+    grid-area: i;
+    background-image: url(imagem/filmes.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: first baseline;
+}
+
+.foto > p{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.foto img{
+    width: 80px;
+}
+.login2{
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+}
+
+.login2> label{
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    width: 98px;
+    height: 41px;
+    color: #FFFFFF;
+
+    
+}
+
+.login2 >input{
+    background-color:#0E1031 ;
+    color: white;
+    height: 90px;
+    width: 600px;
+}
+
+input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+}
+
+.botao input{
+    width: 273px;
+    height: 62px;
+    border-radius: 25px;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.botao{
+    display: flex;
+    justify-content:center; 
+
+}
+
+@media screen and (max-width:800px){
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "i"
+        "p";
+    }
+    
+}

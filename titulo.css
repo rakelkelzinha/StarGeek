@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color:#0E1031;  
+    color: white;
+    width:100vw ;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    padding: 20px;
+}
+
+.menu{
+    position: absolute;    
+    color: white;
+    padding-left: 31px;
+    top: 10px; 
+    left: 30px;
+  
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+   
+
+}
+
+.cadastro input{
+    background-color:#0E1031 ;
+    color: white;
+    font-size: 2rem;
+    border-radius: 15px
+}
+
+.cadastro label{
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+main{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+textarea{
+    background-color: #0E1031;
+}
+
+.menu > a{
+    font-size: 2rem;
+}
+
+.botao input{
+    width: 273px;
+    height: 62px;
+    border-radius: 25px;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    background-color: white;
+    color: black;
+}
+
+.botao{
+    display: flex;
+    justify-content:center; 
+   margin: 40px;
+
+}
