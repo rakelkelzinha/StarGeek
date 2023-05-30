@@ -1,6 +1,6 @@
 const mensagem = document.querySelector(".mensagem");
-const email = document.getElementById("email");
-const senha = document.getElementById("senha");
+const email = document.getElementById("iemail");
+const senha = document.getElementById("isenha");
 const formulario = document.getElementById ("formulario")
 
 formulario.onsubmit = (evento) => {
@@ -15,8 +15,9 @@ formulario.onsubmit = (evento) => {
                     email:email.value
                 }
             )
-            sessionStorage.setItem("loagado", JSON.stringify(dados));
+            sessionStorage.setItem("logado", JSON.stringify(dados));
             mensagem.innerHTML="Logado";
+            window.location.assign("catalogo.html")
             return true;
         }else{
             mensagem.innerHTML ="Senha ou E-mail Incorreto"
