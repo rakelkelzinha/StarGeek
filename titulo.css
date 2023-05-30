@@ -58,6 +58,8 @@ main{
 
 textarea{
     background-color: #0E1031;
+    color: white;
+    font-size: 1.3rem;
 }
 
 .menu > a{
